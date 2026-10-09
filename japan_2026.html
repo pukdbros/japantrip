@@ -277,6 +277,9 @@
                     <button class="category-filter text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="transit">
                         🚆 การเดินทาง
                     </button>
+                    <button class="category-filter text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="shopping">
+                        🛍️ ชอปปิ้ง
+                    </button>
                 </div>
             </div>
 
@@ -359,13 +362,31 @@
                         </div>
                     </div>
 
+                    <!-- Item: Shopping in Shijo and Kawaramachi -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-shopping">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">14:00 - 16:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ชอปปิ้งย่าน Shijo / Kawaramachi</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 👟 <strong>Flower Mountain Shoes</strong> และ <strong>Mont-bell Kyoto Store</strong> ย่าน Shinkyogoku<br>
+                                    • 🎁 <strong>Malebranche (Daimaru Kyoto B1):</strong> ซื้อคุกกี้ชาเขียว Cha-no-ka เป็นของฝาก
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Item: Gion -->
                     <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
                         <div class="flex items-start gap-3">
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-2">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">14:30 - 16:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">16:30 - 18:00 น.</span>
                                     <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Sightseeing</span>
                                     <span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 text-[11px] rounded">🟡 คิวปานกลาง 20-30 นาที</span>
                                 </div>
@@ -388,7 +409,7 @@
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-3">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">17:30 - 19:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">18:00 - 19:30 น.</span>
                                     <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍱 Dinner</span>
                                 </div>
                                 <h4 class="text-base font-semibold text-white mt-1">มื้อเย็นย่าน Kawaramachi (เลือกร้านตามชอบ)</h4>
@@ -790,13 +811,12 @@
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-2">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">14:30 - 16:30 น.</span>
-                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Shrine & Street</span>
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">14:30 - 15:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Shrine</span>
                                 </div>
-                                <h4 class="text-base font-semibold text-white mt-1">ศาลเจ้านัมบะ ยาซากะ (หัวสิงโตยักษ์) + Orange Street</h4>
+                                <h4 class="text-base font-semibold text-white mt-1">ศาลเจ้านัมบะ ยาซากะ (หัวสิงโตยักษ์)</h4>
                                 <p class="text-xs text-gray-400 mt-1 leading-relaxed">
-                                    • 14:30 - 16:00 น. สักการะศาลเจ้านัมบะ ยาซากะ ถ่ายรูปกับหัวสิงโตยักษ์<br>
-                                    • 15:45 - 16:30 น. (ตัวเลือกเสริม) เดินเล่น Orange Street (Tachibana-dori) ย่านมินามิโฮริเอะ แฟชั่น & คาเฟ่
+                                    14:30 - 15:30 น. สักการะศาลเจ้านัมบะ ยาซากะและถ่ายรูปกับหัวสิงโตยักษ์
                                 </p>
                             </div>
                         </div>
@@ -804,6 +824,23 @@
                             class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
                             <i class="fa-solid fa-location-dot mr-1"></i> ศาลเจ้าหัวสิงโต
                         </button>
+                    </div>
+
+                    <!-- Orange Street Shopping -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-shopping">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">15:45 - 16:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินชอปปิ้ง Orange Street (Tachibana-dori)</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    เดินเล่นย่านมินามิโฮริเอะ แวะร้านไลฟ์สไตล์ แฟชั่น และคาเฟ่
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Evening Dotonbori & Dinner -->
@@ -864,7 +901,7 @@
                                 </div>
                                 <h4 class="text-base font-bold text-white mt-1">เที่ยว Universal Studios Japan (USJ) เต็มวัน</h4>
                                 <p class="text-xs text-gray-300 mt-1 leading-relaxed">
-                                    • 07:30 น. ออกจากโรงแรม เดินไป Nagahoribashi ขึ้นรถใต้ดินสาย Nagahori Tsurumi-ryokuchi Line ลง Taisho ต่อ JR Loop Line เปลี่ยนสายที่ Nishikujo ลง Universal City (~40 นาที)<br>
+                                    • 06:00 น. ออกจากโรงแรม เดินไป Nagahoribashi ขึ้นรถใต้ดินสาย Nagahori Tsurumi-ryokuchi Line ลง Taisho ต่อ JR Loop Line เปลี่ยนสายที่ Nishikujo ลง Universal City (~40 นาที)<br>
                                     • สนุกกับเครื่องเล่น Super Nintendo World, Harry Potter และอื่นๆ ยาวๆ ถึงสวนสนุกปิด
                                 </p>
                             </div>
@@ -965,15 +1002,14 @@
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-3">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">14:00 - 20:00 น.</span>
-                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">☕ Cafe Tour & Shopping</span>
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">14:00 - 17:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">☕ Cafe Tour</span>
                                 </div>
-                                <h4 class="text-base font-semibold text-white mt-1">ทัวร์คาเฟ่ Kitahama + ขนมหวาน Umeda & ช้อปปิ้ง</h4>
+                                <h4 class="text-base font-semibold text-white mt-1">ทัวร์คาเฟ่ Kitahama + ขนมหวาน Umeda</h4>
                                 <div class="text-xs text-gray-400 mt-2 space-y-1">
                                     • ☕ <strong>Ourlog Coffee (Kitahama):</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง)</span> คาเฟ่ริมน้ำสุดฮิป (11:00 - 19:00 น.)<br>
                                     • ☕ <strong>Neel Coffee:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> คาเฟ่วินเทจ (10:00 - 19:00 น.)<br>
-                                    • 🥧 <strong>grenier (สาขา Umeda):</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาว 30-60 นาที)</span> พายกรอบสอดไส้ครีมสดสตรอว์เบอร์รี ชั้น 1 Hankyu Grand Building<br>
-                                    • 🛍️ 17:30 - 20:00 น. ช้อปปิ้งห้าง <strong>Shinsaibashi PARCO</strong> และเก็บตกของฝาก
+                                    • 🥧 <strong>grenier (สาขา Umeda):</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาว 30-60 นาที)</span> พายกรอบสอดไส้ครีมสดสตรอว์เบอร์รี ชั้น 1 Hankyu Grand Building
                                 </div>
                             </div>
                         </div>
@@ -991,6 +1027,23 @@
                 </div>
             </div>
 
+                    <!-- Shinsaibashi and Namba Shopping -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-shopping">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">17:30 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ชอปปิ้ง Shinsaibashi PARCO และห้างใกล้เคียง</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    แวะ <strong>Mont-bell</strong> สาขา Namba CITY, Daimaru Shinsaibashi หรือ LUCUA Osaka และซื้อของฝาก
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
             <!-- ================= DAY 8 ================= -->
             <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="8">
                 <div class="flex items-center gap-3 border-l-4 border-jp-red pl-4 py-1">
@@ -1007,13 +1060,30 @@
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d8-1">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">10:00 - 16:00 น.</span>
-                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Outlet Shopping</span>
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">10:00 - 11:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🚆 Transit</span>
                                 </div>
-                                <h4 class="text-base font-semibold text-white mt-1">Check-out ➔ Rinku Premium Outlets</h4>
+                                <h4 class="text-base font-semibold text-white mt-1">Check-out ➔ Rinku Town และฝากกระเป๋า</h4>
                                 <p class="text-xs text-gray-400 mt-1 leading-relaxed">
                                     • 10:00 น. Check-out ออกจากโรงแรม ไปสถานี Namba ขึ้นรถไฟ Nankai Main Line มุ่งหน้าสถานี Rinku-town (~40 นาที)<br>
-                                    • 11:30 - 16:00 น. ฝากกระเป๋าที่ล็อกเกอร์สถานี แล้วช้อปปิ้งทิ้งทายที่ Rinku Premium Outlets
+                                    • ฝากกระเป๋าที่ล็อกเกอร์สถานี Rinku-town ก่อนเดินไป Outlet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rinku Premium Outlets Shopping -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d8-shopping">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">11:30 - 16:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Outlet Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ชอปปิ้งส่งท้ายที่ Rinku Premium Outlets</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    ฝากกระเป๋าไว้ที่ล็อกเกอร์สถานี Rinku-town แล้วชอปปิ้งก่อนเดินทางไปสนามบิน
                                 </p>
                             </div>
                         </div>
