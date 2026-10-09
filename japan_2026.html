@@ -198,7 +198,7 @@
                         </div>
                         <div class="flex items-center justify-between my-3 text-center">
                             <div>
-                                <div class="text-xl font-bold text-white">01:30</div>
+                                <div class="text-xl font-bold text-white">01:15</div>
                                 <div class="text-xs text-gray-400">สุวรรณภูมิ (BKK)</div>
                             </div>
                             <div class="flex-1 px-4 flex flex-col items-center">
@@ -348,12 +348,12 @@
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-1">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">01:30 - 12:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">01:15 - 12:30 น.</span>
                                     <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🚆 Transit</span>
                                 </div>
                                 <h4 class="text-base font-semibold text-white mt-1">เดินทางจาก BKK ถึง Kyoto Station & ฝากกระเป๋า</h4>
                                 <p class="text-xs text-gray-400 mt-1 leading-relaxed">
-                                    • 01:30 น. บินจากสุวรรณภูมิ ถึง KIX T2 (09:20 น.)<br>
+                                    • 01:15 น. บินจากสุวรรณภูมิ ถึง KIX T2 (09:20 น.)<br>
                                     • 10:15 - 10:30 น. นั่ง Shuttle Bus ข้ามไป T1 ซื้อตั๋ว Airport Limousine Bus<br>
                                     • 10:45 - 12:15 น. รถบัสตรงสู่ Kyoto Station (~1.30 ชม.)<br>
                                     • 12:30 น. นั่งรถบัสสาย 26, 28 หรือแท็กซี่ไปฝากกระเป๋าที่ Smile Hotel Kyoto Shijo
@@ -373,8 +373,11 @@
                                 </div>
                                 <h4 class="text-base font-semibold text-white mt-1">ชอปปิ้งย่าน Shijo / Kawaramachi</h4>
                                 <p class="text-xs text-gray-400 mt-1 leading-relaxed">
-                                    • 👟 <strong>Flower Mountain Shoes</strong> และ <strong>Mont-bell Kyoto Store</strong> ย่าน Shinkyogoku<br>
-                                    • 🎁 <strong>Malebranche (Daimaru Kyoto B1):</strong> ซื้อคุกกี้ชาเขียว Cha-no-ka เป็นของฝาก
+                                    • 👟 <strong>LOFTMAN COOP KYOTO:</strong> รองเท้าหลายแบรนด์ เช่น norda, Salomon และ Hoka<br>
+                                    • 👟 <strong>Flower Mountain Shoes / Mont-bell Kyoto Store:</strong> ย่าน Shinkyogoku<br>
+                                    • 🥐 <strong>Amam Dacotan Kyoto:</strong> คิว 60-90 นาทีขึ้นไป แนะนำจองรับสินค้าล่วงหน้า<br>
+                                    • 🍩 <strong>I'm donut? Kyoto:</strong> คิว 30-60 นาที ไม่มีจอง ซื้อกลับได้<br>
+                                    • 🎁 <strong>Malebranche (Daimaru Kyoto B1):</strong> คุกกี้ชาเขียว Cha-no-ka เป็นของฝาก
                                 </p>
                             </div>
                         </div>
@@ -522,6 +525,9 @@
                                         🍜 <strong>Menya Inoichi Hanare</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง 20-40 นาที)</span> — ราเมงซุปปลาแห้ง Michelin Bib Gourmand<br>
                                         ⏰ <em>เปิด:</em> 11:00 - 14:30 น. / 17:00 - 21:00 น. | เปิดทุกวัน
                                     </div>
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍜 <strong>Fumiya Ramen (ふみや)</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว 10-20 นาที / ไม่ต้องจอง)</span> — ราเมง/อุด้งซุปปลาแห้งโชยูใน Nishiki Market
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -533,6 +539,10 @@
                             <button onclick="openModal('Menya Inoichi Hanare', 'ย่าน Kawaramachi', 'ราเมงมิชลินซุปปลาแห้ง', 'Menya Inoichi Hanare')" 
                                 class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
                                 <i class="fa-solid fa-location-dot mr-1"></i> Menya Inoichi
+                            </button>
+                            <button onclick="openModal('Fumiya Ramen Nishiki Market', 'Nishiki Market, Kyoto', 'ร้านราเมง/อุด้งในตลาด Nishiki', 'Fumiya Ramen Nishiki Market')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Fumiya Ramen
                             </button>
                         </div>
                     </div>
@@ -843,6 +853,27 @@
                         </div>
                     </div>
 
+                    <!-- Dotonbori Running Store -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-downbeat">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">16:30 - 20:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">แวะ downbeat RUNNING OSAKA ย่าน Dotonbori</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    ร้านรองเท้าวิ่งเทรลเฉพาะทาง มีแบรนด์ <strong>norda</strong> อยู่ริมถนน Dotonbori
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('downbeat RUNNING OSAKA', 'Dotonbori, Osaka', 'ร้านรองเท้าวิ่งเทรลริมถนน Dotonbori มีแบรนด์ norda', 'downbeat RUNNING OSAKA')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> downbeat RUNNING
+                        </button>
+                    </div>
+
                     <!-- Evening Dotonbori & Dinner -->
                     <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
                         <div class="flex items-start gap-3">
@@ -947,7 +978,7 @@
                 <div class="flex items-center gap-3 border-l-4 border-emerald-400 pl-4 py-1">
                     <div>
                         <div class="text-xs font-bold text-emerald-400 tracking-wider uppercase">DAY 7 • 17 OCTOBER 2026</div>
-                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Osaka: Kuromon Market, Kitahama Cafes & Umeda</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Osaka: Kuromon Market, Nakazakicho Cafes & Umeda</h3>
                     </div>
                 </div>
 
@@ -1008,8 +1039,9 @@
                                 <h4 class="text-base font-semibold text-white mt-1">ทัวร์คาเฟ่ Kitahama + ขนมหวาน Umeda</h4>
                                 <div class="text-xs text-gray-400 mt-2 space-y-1">
                                     • ☕ <strong>Ourlog Coffee (Kitahama):</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง)</span> คาเฟ่ริมน้ำสุดฮิป (11:00 - 19:00 น.)<br>
-                                    • ☕ <strong>Neel Coffee:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> คาเฟ่วินเทจ (10:00 - 19:00 น.)<br>
+                                    • ☕ <strong>neel 中崎町 (neel Nakazakicho):</strong> <span class="text-amber-400 font-semibold">(🟡 คิว 20-40 นาที / ไม่ต้องจอง)</span> คาเฟ่กาแฟและแซนด์วิชหมูทอด Katsusando<br>
                                     • 🥧 <strong>grenier (สาขา Umeda):</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาว 30-60 นาที)</span> พายกรอบสอดไส้ครีมสดสตรอว์เบอร์รี ชั้น 1 Hankyu Grand Building
+                                    <br>• 👟 <strong>LOFTMAN COOP UMEDA:</strong> ร้านรองเท้า norda เป็นตัวเลือกฝั่ง Umeda
                                 </div>
                             </div>
                         </div>
@@ -1024,25 +1056,25 @@
                             </button>
                         </div>
                     </div>
-                </div>
-            </div>
-
                     <!-- Shinsaibashi and Namba Shopping -->
                     <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="shopping">
                         <div class="flex items-start gap-3">
                             <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-shopping">
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">17:30 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">14:00 - 20:00 น.</span>
                                     <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Shopping</span>
                                 </div>
-                                <h4 class="text-base font-semibold text-white mt-1">ชอปปิ้ง Shinsaibashi PARCO และห้างใกล้เคียง</h4>
+                                <h4 class="text-base font-semibold text-white mt-1">แวะ LOFTMAN Umeda และชอปปิ้ง Shinsaibashi</h4>
                                 <p class="text-xs text-gray-400 mt-1 leading-relaxed">
-                                    แวะ <strong>Mont-bell</strong> สาขา Namba CITY, Daimaru Shinsaibashi หรือ LUCUA Osaka และซื้อของฝาก
+                                    • 14:00 - 17:00 น. เลือกแวะ <strong>LOFTMAN COOP UMEDA</strong> เพื่อดูรองเท้า norda ระหว่างเที่ยว Umeda<br>
+                                    • 17:30 - 20:00 น. ชอปปิ้ง <strong>Shinsaibashi PARCO</strong> และ Mont-bell สาขา Namba CITY / Daimaru Shinsaibashi / LUCUA Osaka
                                 </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
             <!-- ================= DAY 8 ================= -->
             <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="8">
