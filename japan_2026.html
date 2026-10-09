@@ -1545,14 +1545,47 @@
             }
         });
 
-        // Location Modal Dialog Handlers
+        // Google Maps URLs copied from the itinerary Markdown.
+        const mapUrls = new Map([
+            ['Smile Hotel Kyoto Shijo', 'https://maps.google.com/?q=Smile+Hotel+Kyoto+Shijo'],
+            ['LOFTMAN COOP KYOTO', 'https://maps.google.com/?q=LOFTMAN+COOP+KYOTO'],
+            ['Amam Dacotan Kyoto', 'https://maps.google.com/?q=Amam+Dacotan+Kyoto'],
+            ["I'm donut? Kyoto", 'https://maps.google.com/?q=I%27m+donut%3F+Kyoto'],
+            ['Malebranche Daimaru Kyoto', 'https://maps.google.com/?q=Malebranche+Daimaru+Kyoto'],
+            ['Gion Komori', 'https://maps.google.com/?q=Gion+Komori'],
+            ['Gion Komori Kyoto', 'https://maps.google.com/?q=Gion+Komori'],
+            ['Curry & Tempura Koisus', 'https://maps.google.com/?q=Curry+%26+Tempura+Koisus'],
+            ['Arashiyama Bamboo Grove', 'https://maps.google.com/?q=Arashiyama+Bamboo+Grove'],
+            ['Arabica Kyoto Arashiyama', 'https://maps.google.com/?q=Arabica+Kyoto+Arashiyama'],
+            ['Fumiya Ramen Nishiki Market', 'https://maps.google.com/?q=Fumiya+Ramen+Nishiki+Market'],
+            ['Kiyomizu-dera', 'https://maps.google.com/?q=Kiyomizu-dera'],
+            ['enen Kyoto', 'https://maps.google.com/?q=enen+Kyoto'],
+            ['Hotel Kuretakeso Takayama-Ekimae', 'https://maps.google.com/?q=Hotel+Kuretakeso+Takayama-Ekimae'],
+            ['Sanmachi Suji', 'https://maps.google.com/?q=Sanmachi+Suji'],
+            ['Ajikura Tengoku', 'https://maps.google.com/?q=Ajikura+Tengoku'],
+            ['Takayama Nohi Bus Center', 'https://maps.google.com/?q=Takayama+Nohi+Bus+Center'],
+            ['Kappa Bridge Kamikochi', 'https://maps.google.com/?q=Kappa+Bridge+Kamikochi'],
+            ['Smile Hotel Premium Osaka Higashishinsaibashi', 'https://maps.google.com/?q=Smile+Hotel+Premium+Osaka+Higashishinsaibashi'],
+            ['Namba Yasaka Shrine', 'https://maps.google.com/?q=Namba+Yasaka+Shrine'],
+            ['downbeat RUNNING OSAKA', 'https://maps.google.com/?q=downbeat+RUNNING+OSAKA'],
+            ['Dotonbori Glico Sign', 'https://maps.google.com/?q=Dotonbori+Glico+Sign'],
+            ['Universal Studios Japan', 'https://maps.google.com/?q=Universal+Studios+Japan'],
+            ['Yakiniku Kameda Shinsaibashi', 'https://maps.google.com/?q=Yakiniku+Kameda+Shinsaibashi'],
+            ['Kuromon Market', 'https://maps.google.com/?q=Kuromon+Market'],
+            ['Kuromon Market Osaka', 'https://maps.google.com/?q=Kuromon+Market'],
+            ['Shabuwara Namba', 'https://maps.google.com/?q=Shabuwara+Namba'],
+            ['LOFTMAN COOP UMEDA', 'https://maps.google.com/?q=LOFTMAN+COOP+UMEDA'],
+            ['grenier Umeda', 'https://maps.google.com/?q=grenier+Umeda'],
+            ['Shinsaibashi PARCO', 'https://maps.google.com/?q=Shinsaibashi+PARCO'],
+            ['Rinku Premium Outlets', 'https://maps.google.com/?q=Rinku+Premium+Outlets'],
+            ['Kansai International Airport Terminal 2', 'https://maps.google.com/?q=Kansai+International+Airport+Terminal+2']
+        ]);
+
+        // Open mapped places directly; use a Maps search for places not linked in the Markdown.
         function openModal(title, subtitle, note, searchTerm) {
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-subtitle').innerText = subtitle;
-            document.getElementById('modal-note').innerText = note;
-            document.getElementById('modal-search-term').innerText = searchTerm;
-            
-            document.getElementById('location-modal').classList.remove('hidden');
+            const query = (searchTerm || title || subtitle).trim();
+            const mapsUrl = mapUrls.get(query) || `https://maps.google.com/?${new URLSearchParams({ q: query })}`;
+            window.open(mapsUrl, '_blank', 'noopener,noreferrer');
         }
 
         function closeModal() {
