@@ -144,10 +144,11 @@
 #### **Day 6: 16 Oct 2026 (Osaka: Universal Studios Japan)**
 
 - **ตารางเวลา & การเดินทาง:**
-  - **06:00 น.** ออกจากโรงแรมเดินทางไปสถานี Universal City (~40 นาที)
+  - **05:50 น.** ออกจากโรงแรมเดินทางไปสถานี Universal City (~40 นาที)
+  Kintetsu-Nippombashi Station (Kintetsu-Nara Line) ลง Nishikujō Station > เปลี่ยนสาย JR Yumesaki Line ลง Universal-City Station
 - **โปรแกรมท่องเที่ยว & มื้ออาหาร:**
-  - **08:30 - 20:00 น.** เที่ยวสวนสนุก Universal Studios Japan (USJ) เต็มวัน
-  - **20:30 น.** กลับย่าน Shinsaibashi ทานมื้อดึก:
+  - **07:30 - 21:00 น.** เที่ยวสวนสนุก Universal Studios Japan (USJ) เต็มวัน
+  - **22:00 น.** กลับย่าน Shinsaibashi ทานมื้อดึก:
     - 🥩 **Yakiniku Kameda (สาขา Minamisenba)** *(🟡 ควรจองล่วงหน้า / ปิดตี 4)*
     - 🍱 **Eel Nakasho Shinsaibashi** *(🟡 ควรจองล่วงหน้า)* — ข้าวหน้าปลาไหลย่างเตาถ่าน
 - **🗺️ พิกัด Google Maps สำหรับ Day 6:**
