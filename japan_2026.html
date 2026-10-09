@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎌 Japan Trip Itinerary 2026 | Kyoto • Takayama • Kamikochi • Osaka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Prompt & Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jp: {
+                            red: '#D32F2F',
+                            crimson: '#9A0007',
+                            dark: '#121316',
+                            card: '#1C1E24',
+                            cardHover: '#252830',
+                            gold: '#D4AF37',
+                            sand: '#F7F4EF',
+                            wood: '#8C6D53',
+                            accent: '#FF6B6B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Kanit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #0E0F12;
+            color: #E2E8F0;
+        }
+        .glass-panel {
+            background: rgba(28, 30, 36, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(35, 38, 47, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        .tab-btn.active {
+            background: linear-gradient(135deg, #D32F2F 0%, #9A0007 100%);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+        }
+        .category-filter.active {
+            background-color: #D4AF37;
+            color: #121316;
+            font-weight: 600;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121316;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D3748;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D32F2F;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-jp-red selection:text-white">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-gray-800 px-4 py-3 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">🎌</span>
+                <div>
+                    <h1 class="text-lg md:text-xl font-bold font-display text-white tracking-wide leading-tight">JAPAN TRIP 2026</h1>
+                    <p class="text-xs text-gray-400">11 - 18 Oct 2026 • Kansai & Central Japan</p>
+                </div>
+            </div>
+
+            <!-- Quick Action Counters -->
+            <div class="flex items-center gap-2 text-xs md:text-sm">
+                <div class="bg-gray-800/80 px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
+                    <i class="fa-solid fa-[#FFD700] fa-clock text-amber-400"></i>
+                    <span>นับถอยหลัง: <strong id="countdown" class="text-amber-400 font-mono">---</strong></span>
+                </div>
+                <div class="bg-gray-800/80 px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
+                    <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                    <span>เก็บแล้ว: <strong id="checked-count" class="text-emerald-400 font-mono">0</strong>/<span id="total-count">0</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO HEADER CONTAINER -->
+    <section class="relative overflow-hidden pt-8 pb-12 px-4 border-b border-gray-800/60 bg-gradient-to-b from-gray-900 via-jp-dark to-jp-dark">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-jp-red/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 top-1/2 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <span class="inline-block px-3 py-1 bg-jp-red/20 text-red-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-jp-red/30">
+                    Autumn Season Plan
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold font-display text-white mb-4 leading-tight">
+                    แผนเที่ยวญี่ปุ่น 8 วัน 7 คืน
+                </h2>
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                    เจาะลึก 4 เมืองไฮไลท์ <span class="text-amber-400 font-medium">Kyoto • Takayama • Kamikochi • Osaka</span> พร้อมพิกัดกินเที่ยว ตารางรถไฟ คิวร้านอาหาร และข้อควรระวังครบในหน้าเดียว
+                </p>
+            </div>
+
+            <!-- CITY ROUTE HIGHLIGHT CARDS -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
+                <div class="glass-card p-3 md:p-4 rounded-xl text-center border-l-4 border-emerald-500">
+                    <div class="text-xs text-gray-400 mb-1">11 - 13 OCT</div>
+                    <div class="text-base md:text-lg font-bold text-white">🎎 Kyoto</div>
+                    <div class="text-xs text-emerald-400 mt-1">วัดน้ำใส • ป่าไผ่ • Gion</div>
+                </div>
+                <div class="glass-card p-3 md:p-4 rounded-xl text-center border-l-4 border-amber-500">
+                    <div class="text-xs text-gray-400 mb-1">13 - 15 OCT</div>
+                    <div class="text-base md:text-lg font-bold text-white">🛖 Takayama</div>
+                    <div class="text-xs text-amber-400 mt-1">เมืองเก่า • เนื้อฮิดะ A5</div>
+                </div>
+                <div class="glass-card p-3 md:p-4 rounded-xl text-center border-l-4 border-sky-500">
+                    <div class="text-xs text-gray-400 mb-1">14 OCT (Day Trip)</div>
+                    <div class="text-base md:text-lg font-bold text-white">🍁 Kamikochi</div>
+                    <div class="text-xs text-sky-400 mt-1">เทรลธรรมชาติ • Kappa Bridge</div>
+                </div>
+                <div class="glass-card p-3 md:p-4 rounded-xl text-center border-l-4 border-rose-500">
+                    <div class="text-xs text-gray-400 mb-1">15 - 18 OCT</div>
+                    <div class="text-base md:text-lg font-bold text-white">🐙 Osaka</div>
+                    <div class="text-xs text-rose-400 mt-1">USJ • Dotonbori • Outlet</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="max-w-7xl mx-auto px-4 py-8 w-full flex-grow space-y-8">
+
+        <!-- FLIGHT SUMMARY CARD -->
+        <section class="glass-panel rounded-2xl p-5 md:p-6 shadow-2xl relative overflow-hidden border border-red-900/30">
+            <div class="flex items-center justify-between mb-4 border-b border-gray-800 pb-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-jp-red/20 flex items-center justify-center text-jp-red text-xl">
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold text-white font-display">สรุปข้อมูลเที่ยวบิน (Peach Aviation)</h3>
+                        <p class="text-xs text-gray-400">กรุงเทพฯ (BKK) ↔ คันไซ (KIX)</p>
+                    </div>
+                </div>
+                <span class="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full border border-amber-500/30">
+                    Terminal 2 Warning ⚠️
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Outbound Flight -->
+                <div class="bg-gray-900/70 p-4 rounded-xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-bold text-jp-accent uppercase bg-jp-red/10 px-2.5 py-0.5 rounded">ขาไป • 11 OCT 2026</span>
+                            <span class="text-xs text-gray-400 font-mono">Flight MM092</span>
+                        </div>
+                        <div class="flex items-center justify-between my-3 text-center">
+                            <div>
+                                <div class="text-xl font-bold text-white">01:30</div>
+                                <div class="text-xs text-gray-400">สุวรรณภูมิ (BKK)</div>
+                            </div>
+                            <div class="flex-1 px-4 flex flex-col items-center">
+                                <span class="text-[10px] text-gray-500">5h 50m</span>
+                                <div class="w-full h-0.5 bg-gray-700 relative my-1">
+                                    <i class="fa-solid fa-plane text-xs text-jp-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                                </div>
+                                <span class="text-[10px] text-emerald-400">Direct Flight</span>
+                            </div>
+                            <div>
+                                <div class="text-xl font-bold text-white">09:20</div>
+                                <div class="text-xs text-gray-400">คันไซ (KIX T2)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-gray-800/80 text-xs text-amber-300/90 bg-amber-950/20 p-2.5 rounded-lg border border-amber-900/30">
+                        <i class="fa-solid fa-triangle-exclamation mr-1 text-amber-400"></i>
+                        <strong>จุดระวัง:</strong> Peach ลง <strong>Terminal 2</strong> ผ่าน ตม. แล้ว ต้องนั่ง Shuttle Bus ฟรี (7-10 นาที) มา <strong>Terminal 1</strong> เพื่อขึ้น Airport Limousine Bus ไปเกียวโต
+                    </div>
+                </div>
+
+                <!-- Return Flight -->
+                <div class="bg-gray-900/70 p-4 rounded-xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-bold text-sky-400 uppercase bg-sky-950/40 px-2.5 py-0.5 rounded">ขากลับ • 18 OCT 2026</span>
+                            <span class="text-xs text-gray-400 font-mono">Flight MM091</span>
+                        </div>
+                        <div class="flex items-center justify-between my-3 text-center">
+                            <div>
+                                <div class="text-xl font-bold text-white">19:30</div>
+                                <div class="text-xs text-gray-400">คันไซ (KIX T2)</div>
+                            </div>
+                            <div class="flex-1 px-4 flex flex-col items-center">
+                                <span class="text-[10px] text-gray-500">6h 25m</span>
+                                <div class="w-full h-0.5 bg-gray-700 relative my-1">
+                                    <i class="fa-solid fa-plane text-xs text-sky-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                                </div>
+                                <span class="text-[10px] text-emerald-400">Direct Flight</span>
+                            </div>
+                            <div>
+                                <div class="text-xl font-bold text-white">23:55</div>
+                                <div class="text-xs text-gray-400">สุวรรณภูมิ (BKK)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-gray-800/80 text-xs text-rose-300/90 bg-rose-950/20 p-2.5 rounded-lg border border-rose-900/30">
+                        <i class="fa-solid fa-clock mr-1 text-rose-400"></i>
+                        <strong>จุดระวัง:</strong> ควรเดินทางถึง <strong>KIX Terminal 2 ไม่เกิน 17:00 น.</strong> (เคาน์เตอร์เช็คอินปิดก่อนเครื่องบินออก 50 นาที)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE CONTROLS (SEARCH & FILTERS) -->
+        <section class="glass-panel p-4 rounded-2xl space-y-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <!-- Search Box -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="search-input" placeholder="ค้นหาร้านอาหาร, สถานที่, เวลา..." 
+                        class="w-full bg-gray-900 border border-gray-700 rounded-xl pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-jp-gold transition-colors">
+                </div>
+
+                <!-- Activity Category Filters -->
+                <div class="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto hide-scrollbar pb-1 md:pb-0">
+                    <button class="category-filter active text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="all">
+                        ทั้งหมด
+                    </button>
+                    <button class="category-filter text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="sightseeing">
+                        ⛩️ สถานที่เที่ยว
+                    </button>
+                    <button class="category-filter text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="food">
+                        🍱 อาหาร & คาเฟ่
+                    </button>
+                    <button class="category-filter text-xs px-3.5 py-2 rounded-xl bg-gray-800 text-gray-300 hover:text-white transition-all whitespace-nowrap" data-cat="transit">
+                        🚆 การเดินทาง
+                    </button>
+                </div>
+            </div>
+
+            <!-- DAY SELECTION TABS -->
+            <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pt-2 border-t border-gray-800/80">
+                <button class="tab-btn active px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all" data-day="all">
+                    🗓️ ดูทั้งหมด 8 วัน
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="1">
+                    Day 1 (11 Oct) • Kyoto
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="2">
+                    Day 2 (12 Oct) • Kyoto
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="3">
+                    Day 3 (13 Oct) • Takayama
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="4">
+                    Day 4 (14 Oct) • Kamikochi
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="5">
+                    Day 5 (15 Oct) • Osaka
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="6">
+                    Day 6 (16 Oct) • USJ
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="7">
+                    Day 7 (17 Oct) • Osaka
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border border-gray-700 transition-all text-gray-300 bg-gray-900" data-day="8">
+                    Day 8 (18 Oct) • Departure
+                </button>
+            </div>
+        </section>
+
+        <!-- TIMELINE CONTAINER -->
+        <div id="itinerary-timeline" class="space-y-10">
+
+            <!-- ================= DAY 1 ================= -->
+            <div class="day-section space-y-4" data-day-id="1">
+                <div class="flex items-center gap-3 border-l-4 border-jp-red pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-jp-red tracking-wider uppercase">DAY 1 • 11 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">BKK ➔ KIX ➔ Kyoto (Gion & Kawaramachi)</h3>
+                    </div>
+                </div>
+
+                <!-- Hotel Info Badge -->
+                <div class="bg-gray-900/80 p-3.5 rounded-xl border border-gray-800 flex items-center justify-between text-xs text-gray-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-hotel text-jp-gold text-sm"></i>
+                        <span>ที่พัก: <strong class="text-white">Smile Hotel Kyoto Shijo</strong></span>
+                    </div>
+                    <button onclick="openModal('Smile Hotel Kyoto Shijo', 'โรงแรมย่าน Shijo เดินทางสะดวกไป Gion และ Kawaramachi', 'ฝากกระเป๋าได้ก่อนเช็คอิน', ' Smile Hotel Kyoto Shijo')" 
+                        class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1 rounded-lg border border-gray-700 transition-colors">
+                        <i class="fa-solid fa-location-dot mr-1"></i> ดูพิกัด
+                    </button>
+                </div>
+
+                <!-- Timeline Items -->
+                <div class="grid grid-cols-1 gap-3">
+                    
+                    <!-- Item: Transit BKK to Kyoto -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">01:30 - 12:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🚆 Transit</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินทางจาก BKK ถึง Kyoto Station & ฝากกระเป๋า</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 01:30 น. บินจากสุวรรณภูมิ ถึง KIX T2 (09:20 น.)<br>
+                                    • 10:15 - 10:30 น. นั่ง Shuttle Bus ข้ามไป T1 ซื้อตั๋ว Airport Limousine Bus<br>
+                                    • 10:45 - 12:15 น. รถบัสตรงสู่ Kyoto Station (~1.30 ชม.)<br>
+                                    • 12:30 น. นั่งรถบัสสาย 26, 28 หรือแท็กซี่ไปฝากกระเป๋าที่ Smile Hotel Kyoto Shijo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item: Gion -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">14:30 - 16:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Sightseeing</span>
+                                    <span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 text-[11px] rounded">🟡 คิวปานกลาง 20-30 นาที</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินเล่นย่านประวัติศาสตร์ Gion & ทานขนม Gion Komori</h4>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    🍵 <strong>Gion Komori:</strong> ขนมหวานชาเขียวโบราณ พาร์เฟต์/พูรินชาเขียวริมคลอง Shirakawa<br>
+                                    ⏰ <em>เวลาเปิด-ปิด:</em> 11:00 - 19:00 น. (L.O. 18:30) | <span class="text-rose-400">ปิดวันจันทร์</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Gion Komori', 'ย่าน Gion ริมคลอง Shirakawa', 'ห่างจากโรงแรม ~2.2 กม. (นั่งบัส ~15 นาที)', 'Gion Komori Kyoto')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> พิกัด & แผนที่
+                        </button>
+                    </div>
+
+                    <!-- Item: Dinner Kawaramachi -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">17:30 - 19:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍱 Dinner</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อเย็นย่าน Kawaramachi (เลือกร้านตามชอบ)</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1.5">
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍣 <strong>Musashi Sushi</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว 10-20 นาที)</span> — ซูชิจานหมุนเจ้าดัง ราคาย่อมเยา<br>
+                                        ⏰ <em>เปิด:</em> 11:00 - 21:45 น. | เปิดทุกวัน
+                                    </div>
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍤 <strong>Tendon Makino</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง 30-45 นาที)</span> — ข้าวหน้าเทมปุระชามยักษ์ทอดสดใหม่<br>
+                                        ⏰ <em>เปิด:</em> 11:00 - 21:00 น. | เปิดทุกวัน
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Musashi Sushi Kyoto', 'ย่าน Kawaramachi', 'ห่างจาก Gion ~700 เมตร (เดิน ~10 นาที)', 'Musashi Sushi Kyoto')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Musashi Sushi
+                            </button>
+                            <button onclick="openModal('Tendon Makino Kyoto Kawaramachi', 'ย่าน Kawaramachi', 'ห่างจาก Musashi Sushi ~300 เมตร', 'Tendon Makino Kyoto Kawaramachi')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Tendon Makino
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Item: Dessert -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d1-4">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-rose-950 text-rose-400 text-[11px] font-mono rounded">19:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍡 Dessert</span>
+                                    <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 text-[11px] rounded">🟢 คิวหมุนเวียนเร็ว</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">Matcha House Kyoto Kawaramachi</h4>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    🍵 Matcha Tiramisu ในกล่องไม้ชื่อดัง รสชาติเข้มข้นละมุนลิ้น<br>
+                                    ⏰ <em>เวลาเปิด-ปิด:</em> 11:00 - 20:30 น. (L.O. 20:00) | เปิดทุกวัน
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Matcha House Kyoto Kawaramachi', 'ย่าน Kawaramachi', 'ห่างจาก Tendon Makino ~250 เมตร', 'Matcha House Kyoto Kawaramachi')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> พิกัด & แผนที่
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ================= DAY 2 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="2">
+                <div class="flex items-center gap-3 border-l-4 border-jp-gold pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-jp-gold tracking-wider uppercase">DAY 2 • 12 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Kyoto: Arashiyama & Kiyomizu-dera</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Morning Transit & Arashiyama -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d2-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">07:45 - 11:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🎋 Sightseeing & Coffee</span>
+                                    <span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 text-[11px] rounded">🟡 Arabica คิวยาว 30-45 นาที</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ป่าไผ่ Arashiyama + สะพาน Togetsukyo + % Arabica Coffee</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 07:45 น. ออกจากโรงแรม เดินไป JR Nijo หรือนั่งบัสไป JR Kyoto Station ขึ้น JR San-In Line ลงสถานี Saga-Arashiyama (~20 นาที)<br>
+                                    • เดินชมป่าไผ่ Arashiyama Bamboo Grove และสะพาน Togetsukyo<br>
+                                    ☕ <strong>% Arabica Kyoto Arashiyama:</strong> จิบกาแฟวิวแม่น้ำ Katsura (เปิด 09:00 - 17:00 น.)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Arashiyama Bamboo Grove', 'Arashiyama, Kyoto', 'เดินทางด้วย JR San-In Line ลง Saga-Arashiyama', 'Arashiyama Bamboo Grove')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> ป่าไผ่ Arashiyama
+                            </button>
+                            <button onclick="openModal('% Arabica Kyoto Arashiyama', 'ริมแม่น้ำ Katsura', 'ห่างจากป่าไผ่ ~600 เมตร (เดิน ~8 นาที)', 'Arabica Kyoto Arashiyama')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> % Arabica Coffee
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Lunch -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d2-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">11:30 - 13:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍜 Lunch Options</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อเที่ยง (เดินทางกลับมา Kyoto Station / Kawaramachi)</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1.5">
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🥩 <strong>Gyukatsu Motomura</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาวมาก 60-90 นาที)</span> — เนื้อทอดกิวคัตสึระดับตำนาน<br>
+                                        ⏰ <em>เปิด:</em> 11:00 - 22:00 น. (L.O. 21:00) | เปิดทุกวัน
+                                    </div>
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍜 <strong>Menya Inoichi Hanare</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง 20-40 นาที)</span> — ราเมงซุปปลาแห้ง Michelin Bib Gourmand<br>
+                                        ⏰ <em>เปิด:</em> 11:00 - 14:30 น. / 17:00 - 21:00 น. | เปิดทุกวัน
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Gyukatsu Motomura Kyoto', 'Kyoto Station / Kawaramachi', 'กิวคัตสึเนื้อทอดฉ่ำๆ', 'Gyukatsu Motomura Kyoto')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Gyukatsu Motomura
+                            </button>
+                            <button onclick="openModal('Menya Inoichi Hanare', 'ย่าน Kawaramachi', 'ราเมงมิชลินซุปปลาแห้ง', 'Menya Inoichi Hanare')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Menya Inoichi
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Kiyomizu-dera Afternoon -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d2-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">13:30 - 17:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Temple & Street Walk</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">วัดคิโยะมิซุ (วัดน้ำใส) + ถนน Ninenzaka & Sannenzaka</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • นั่งบัสสาย 206 หรือ 86 จาก Kyoto Station ไปลงป้าย Kiyomizu-michi (~20-25 นาที)<br>
+                                    🐟 <strong>Miso Saikyo Yaki (Kyouunawa Hanare):</strong> ปลาหิมะย่างซอสมิโซะสูตรโบราณ (11:00 - 18:00 น.)<br>
+                                    ☕ <strong>Walden Woods Kyoto / Omofu Roastery Cafe:</strong> คาเฟ่มินิมอลสำหรับพักขา
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Kiyomizu-dera Temple', 'Higashiyama, Kyoto', 'ห่างจาก Arashiyama ~12 กม. (JR+บัส ~45 นาที)', 'Kiyomizu-dera')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> พิกัดวัดน้ำใส
+                        </button>
+                    </div>
+
+                    <!-- Dinner & Dessert -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d2-4">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">18:00 - 20:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🥩 Dinner & Donuts</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อเย็นปิ้งย่าง/ซูชิ + ของหวานkoe donuts</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1">
+                                    • 🥩 <strong>enen Kyoto:</strong> <span class="text-rose-400 font-semibold">(🔴 จองล่วงหน้าเท่านั้น)</span> ปิ้งย่างเนื้อวัวดิสเพลย์สวยย่าน Kawaramachi (17:00 - 22:30 น.)<br>
+                                    • 🍣 <strong>Sushi Bar Sashisu / Tai Sushi:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว 15-30 นาที)</span> (17:00 - 23:00 น.)<br>
+                                    • 🍩 <strong>koe donuts kyoto:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> โดนัทโฮมเมดสไตล์คราฟต์ (09:00 - 20:00 น.)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('enen Kyoto', 'Kawaramachi', 'ปิ้งย่างเนื้อวัวดิสเพลย์สวย ต้องจองล่วงหน้า', 'enen Kyoto')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> enen Kyoto
+                            </button>
+                            <button onclick="openModal('koe donuts kyoto', 'Kawaramachi', 'โดนัทโฮมเมดสไตล์คราฟต์', 'koe donuts kyoto')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> koe donuts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 3 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="3">
+                <div class="flex items-center gap-3 border-l-4 border-amber-500 pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-amber-500 tracking-wider uppercase">DAY 3 • 13 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Kyoto ➔ Takayama (Hida Express)</h3>
+                    </div>
+                </div>
+
+                <!-- Hotel Info Badge -->
+                <div class="bg-gray-900/80 p-3.5 rounded-xl border border-gray-800 flex items-center justify-between text-xs text-gray-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-hotel text-jp-gold text-sm"></i>
+                        <span>ที่พัก: <strong class="text-white">Hotel Kuretakeso Takayama-Ekimae</strong> (เดินจากสถานี 2 นาที)</span>
+                    </div>
+                    <button onclick="openModal('Hotel Kuretakeso Takayama-Ekimae', 'หน้าสถานี Takayama', 'ฝากกระเป๋าได้สะดวกมากๆ', 'Hotel Kuretakeso Takayama-Ekimae')" 
+                        class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1 rounded-lg border border-gray-700 transition-colors">
+                        <i class="fa-solid fa-location-dot mr-1"></i> ดูพิกัด
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Critical Transit Warning Item -->
+                    <div class="timeline-item glass-card p-4 rounded-xl border-l-4 border-rose-500 flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d3-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-rose-950 text-rose-300 text-[11px] font-mono font-bold rounded">🚨 07:30 - 12:14 น.</span>
+                                    <span class="px-2 py-0.5 bg-jp-red text-white text-[11px] font-bold rounded">รถไฟรอบสำคัญ!</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white mt-1">เดินทาง Kyoto ➔ Takayama (Limited Express Hida 25)</h4>
+                                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                                    • <strong class="text-amber-400">07:30 น. ต้องออกจากโรงแรม Smile Hotel Kyoto Shijo!</strong> นั่งแท็กซี่ (~10 นาที) หรือบัสสาย 26, 28 (~20 นาที)<br>
+                                    • ถึง Kyoto Station ก่อน 07:55 น. เพื่อหา <strong class="text-emerald-400">ชานชาลา 0 (Platform 0)</strong> และซื้อ Ekiben<br>
+                                    • <strong>08:31 น.</strong> รถไฟออกเดินทาง ➔ ถึงสถานี Takayama เวลา <strong>12:14 น.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon Old Town -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d3-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">14:00 - 17:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛖 Old Town Walk</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินเล่นย่านเมืองเก่า Sanmachi Suji (Old Town)</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1">
+                                    • 🍡 <strong>Hida Kotte Ushi:</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาว 25-40 นาที)</span> ซูชิเนื้อฮิดะบนข้าวเกรียบ (10:00 - 17:00 น.)<br>
+                                    • 🍱 <strong>Sakaguchiya / Aji no Yohei:</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง)</span> ข้าวหน้าเนื้อฮิดะ & โซบะ<br>
+                                    • 🍵 <strong>Kissako Katsute:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> ชา&ขนมในบ้านไม้โบราณ (<span class="text-rose-400">ปิดวันพุธ</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Sanmachi Suji', 'Takayama Old Town', 'ห่างจากโรงแรม ~800 เมตร (เดิน ~10 นาที)', 'Sanmachi Suji')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> ย่านเมืองเก่า
+                            </button>
+                            <button onclick="openModal('Hida Kotte Ushi', 'Sanmachi Suji Old Town', 'ซูชิเนื้อฮิดะบนข้าวเกรียบยอดฮิต', 'Hida Kotte Ushi')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Hida Kotte Ushi
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dinner Ajikura Tengoku -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d3-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-rose-950 text-rose-400 text-[11px] font-mono rounded">18:00 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🥩 Hida Beef A5</span>
+                                    <span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 text-[11px] rounded">🔴 คิวยาวมาก ต้องกดคิวเร็ว!</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white mt-1">Ajikura Tengoku (รสชาติเนื้อฮิดะเกรด A5 ติดสถานี)</h4>
+                                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                                    💡 <strong>เทคนิคเด็ด:</strong> ให้ไปกดตู้รับคิวหน้าร้านตั้งแต่ช่วง <strong>16:30 - 17:00 น.</strong> (ร้านเปิดรอบเย็น 17:00 น.)<br>
+                                    ⏰ <em>เปิด:</em> 11:00-14:00 น. / 17:00-21:00 น. (L.O. 20:30) | <span class="text-rose-400">ปิดวันอังคาร</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Ajikura Tengoku', 'ข้างสถานี Takayama', 'ห่างจากโรงแรมเพียง ~150 เมตร (เดิน 2 นาที)', 'Ajikura Tengoku')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> พิกัดร้านเนื้อ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 4 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="4">
+                <div class="flex items-center gap-3 border-l-4 border-sky-400 pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-sky-400 tracking-wider uppercase">DAY 4 • 14 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Takayama ➔ Kamikochi Day Trip</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Early Morning Bus Warning -->
+                    <div class="timeline-item glass-card p-4 rounded-xl border-l-4 border-amber-500 flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d4-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-300 text-[11px] font-mono font-bold rounded">⏰ 05:00 - 07:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-amber-500 text-gray-950 text-[11px] font-bold rounded">ตื่นเช้ามากๆ</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white mt-1">ขึ้นรถบัส Nohi Bus รอบเช้าสุดไป Kamikochi</h4>
+                                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                                    • <strong class="text-rose-400">05:00 น. ต้องออกจากโรงแรม Hotel Kuretakeso!</strong> เดินไป Takayama Nohi Bus Center (3 นาที)<br>
+                                    • ต่อคิวขึ้นรถบัสรอบ <strong>05:20 น.</strong> (เปลี่ยนรถที่ Hirayu Onsen) ถึง Kamikochi ~07:00 น.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Takayama Nohi Bus Center', 'ติดสถานี Takayama', 'ห่างจากโรงแรม ~200 เมตร', 'Takayama Nohi Bus Center')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> Bus Center
+                        </button>
+                    </div>
+
+                    <!-- Kamikochi Nature Trail -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d4-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">07:00 - 13:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍁 Nature Trekking</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินเทรลชมธรรมชาติ Kamikochi</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • เส้นทางแนะนำ: <strong>Taisho Pond (บึงไทโช) ➔ Tashiro Bridge ➔ Kappa Bridge (สะพานคัปปะ)</strong><br>
+                                    • สูดอากาศบริสุทธิ์ ชมวิวเทือกเขาเจแปนแอลป์และเงาสะท้อนน้ำใสราวกระจก
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Kappa Bridge Kamikochi', 'Kamikochi, Nagano', 'สะพานแลนด์มาร์กกลางคามิโคจิ', 'Kappa Bridge Kamikochi')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> สะพานคัปปะ
+                        </button>
+                    </div>
+
+                    <!-- Return & Relax -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d4-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">13:30 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">☕ Cafe & Dinner</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">เดินทางกลับ Takayama + พักจิบกาแฟ & มื้อเย็น</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 13:30 - 15:00 น. นั่งรถบัสกลับสู่ Takayama<br>
+                                    • 15:30 - 17:00 น. ☕ <strong>RyuRyu Kura Shokubo:</strong> คาเฟ่บรรยากาศโกดังโบราณ เค้กโฮมเมด (<span class="text-rose-400">ปิดวันพุธ</span>)<br>
+                                    • 18:00 - 20:00 น. มื้อเย็นเก็บตกเมนูเนื้อฮิดะ เช่น <strong>Aji no Yohei</strong> หรือ <strong>Sakaguchiya</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('RyuRyu Kura Shokubo', 'Takayama', 'ห่างจากสถานี ~600 เมตร (เดิน ~8 นาที)', 'RyuRyu Kura Shokubo Takayama')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> RyuRyu Cafe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 5 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="5">
+                <div class="flex items-center gap-3 border-l-4 border-rose-500 pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-rose-500 tracking-wider uppercase">DAY 5 • 15 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Takayama ➔ Osaka (Namba & Dotonbori)</h3>
+                    </div>
+                </div>
+
+                <!-- Hotel Info Badge -->
+                <div class="bg-gray-900/80 p-3.5 rounded-xl border border-gray-800 flex items-center justify-between text-xs text-gray-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-hotel text-jp-gold text-sm"></i>
+                        <span>ที่พัก: <strong class="text-white">Smile Hotel Premium Osaka Higashishinsaibashi</strong></span>
+                    </div>
+                    <button onclick="openModal('Smile Hotel Premium Osaka Higashishinsaibashi', 'ย่าน Shinsaibashi / Dotonbori', 'ฝากกระเป๋าได้ก่อนเช็คอิน', 'Smile Hotel Premium Osaka Higashishinsaibashi')" 
+                        class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1 rounded-lg border border-gray-700 transition-colors">
+                        <i class="fa-solid fa-location-dot mr-1"></i> ดูพิกัด
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Morning Transit -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">เช้า - 13:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🚄 Shinkansen Transit</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">นั่ง Ltd Exp Hida ➔ Nagoya ➔ Shinkansen ไป Osaka</h4>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    • Check-out ออกจาก Takayama นั่ง Ltd Exp Hida ไป Nagoya (~2.20 ชม.) ต่อ Shinkansen ลง Shin-Osaka / Namba<br>
+                                    • 13:00 น. ฝากกระเป๋าที่ Smile Hotel Premium Osaka Higashishinsaibashi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon Shrine & Shopping -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">14:30 - 16:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">⛩️ Shrine & Street</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ศาลเจ้านัมบะ ยาซากะ (หัวสิงโตยักษ์) + Orange Street</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 14:30 - 16:00 น. สักการะศาลเจ้านัมบะ ยาซากะ ถ่ายรูปกับหัวสิงโตยักษ์<br>
+                                    • 15:45 - 16:30 น. (ตัวเลือกเสริม) เดินเล่น Orange Street (Tachibana-dori) ย่านมินามิโฮริเอะ แฟชั่น & คาเฟ่
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Namba Yasaka Shrine', 'Namba, Osaka', 'ห่างจากโรงแรม ~2.0 กม. (แท็กซี่/ใต้ดิน ~12 นาที)', 'Namba Yasaka Shrine')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> ศาลเจ้าหัวสิงโต
+                        </button>
+                    </div>
+
+                    <!-- Evening Dotonbori & Dinner -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d5-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">16:30 - 20:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🏃 Dotonbori Night</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ถ่ายรูปป้ายกูลิโกะ Dotonbori & มื้อเย็นร้านดัง</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1.5">
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍱 <strong>Unagi Kushiyaki Izumo</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาวมาก 60-90 นาที)</span> — ข้าวหน้าปลาไหลโปะไข่ทรงเครื่องยักษ์ (11:00 - 23:00 น.)
+                                    </div>
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍢 <strong>Hozenji Yamakazu</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง)</span> — คัปโปะ/โอเด้ง ในซอยโบราณ Hozenji Yokocho (17:00 - 23:00 น.)
+                                    </div>
+                                    <div class="p-2 bg-gray-900/60 rounded border border-gray-800/80">
+                                        🍣 <strong>Golai Tachizushi</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> — ยืนกินซูชิสดๆ ราคาย่อมเยา (17:00 - 23:00 น.)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Dotonbori Glico Sign', 'Dotonbori, Osaka', 'ห่างจากศาลเจ้า ~1.2 กม. (เดิน ~15 นาที)', 'Dotonbori Glico Sign')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> ป้ายกูลิโกะ
+                            </button>
+                            <button onclick="openModal('Unagi Kushiyaki Izumo Osaka', 'LUCUA Osaka / Dotonbori', 'ข้าวหน้าปลาไหลโปะไข่ยักษ์', 'Unagi Kushiyaki Izumo Osaka')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Unagi Izumo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 6 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="6">
+                <div class="flex items-center gap-3 border-l-4 border-purple-500 pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-purple-400 tracking-wider uppercase">DAY 6 • 16 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Osaka: Universal Studios Japan (USJ)</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- USJ Full Day -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d6-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-purple-950 text-purple-300 text-[11px] font-mono rounded">07:30 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-purple-600 text-white text-[11px] font-bold rounded">🎢 Theme Park Day</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white mt-1">เที่ยว Universal Studios Japan (USJ) เต็มวัน</h4>
+                                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                                    • 07:30 น. ออกจากโรงแรม เดินไป Nagahoribashi ขึ้นรถใต้ดินสาย Nagahori Tsurumi-ryokuchi Line ลง Taisho ต่อ JR Loop Line เปลี่ยนสายที่ Nishikujo ลง Universal City (~40 นาที)<br>
+                                    • สนุกกับเครื่องเล่น Super Nintendo World, Harry Potter และอื่นๆ ยาวๆ ถึงสวนสนุกปิด
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Universal Studios Japan', 'Osaka Bay Area', 'นั่งรถไฟจาก Shinsaibashi ~40 นาที', 'Universal Studios Japan')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> พิกัด USJ
+                        </button>
+                    </div>
+
+                    <!-- Late Night Dinner -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d6-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-rose-950 text-rose-400 text-[11px] font-mono rounded">20:30 - 23:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🥩 Late Night Dinner</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อดึกย่าน Shinsaibashi</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 🥩 <strong>Yakiniku Kameda (สาขา Minamisenba):</strong> <span class="text-amber-400 font-semibold">(🟡 ควรจอง / คิวซาหลัง 21:00 น.)</span> ปิ้งย่างเนื้อวัวเปิดถึงตี 4! (17:00 - 04:00 น.)<br>
+                                    • 🍱 <strong>Eel Nakasho Shinsaibashi:</strong> <span class="text-amber-400 font-semibold">(🟡 ควรจองล่วงหน้า)</span> ข้าวหน้าปลาไหลย่างเตาถ่าน (17:00 - 22:00 น.)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Yakiniku Kameda Shinsaibashi', 'Minamisenba / Shinsaibashi', 'ห่างจากโรงแรม ~600 เมตร (เดิน ~8 นาที)', 'Yakiniku Kameda Shinsaibashi')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Yakiniku Kameda
+                            </button>
+                            <button onclick="openModal('Eel Nakasho Shinsaibashi', 'Shinsaibashi', 'ห่างจากโรงแรม ~700 เมตร', 'Eel Nakasho Shinsaibashi')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Eel Nakasho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 7 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="7">
+                <div class="flex items-center gap-3 border-l-4 border-emerald-400 pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-emerald-400 tracking-wider uppercase">DAY 7 • 17 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Osaka: Kuromon Market, Kitahama Cafes & Umeda</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Morning Market -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[11px] font-mono rounded">09:00 - 11:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🐟 Seafood Market</span>
+                                    <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 text-[11px] rounded">🟢 คิวหมุนเวียนเร็ว</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อเช้าตลาดปลา Kuromon Market</h4>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    เดินทานซีฟู้ดสดๆ ข้าวหน้าปลาดิบ ขาปูยักษ์ และเนื้อย่างในตลาดปลาชื่อดัง
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Kuromon Ichiba Market', 'Nipponbashi, Osaka', 'ห่างจากโรงแรม ~900 เมตร (เดิน ~12 นาที)', 'Kuromon Market Osaka')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> ตลาดปลา Kuromon
+                        </button>
+                    </div>
+
+                    <!-- Lunch -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-amber-950 text-amber-400 text-[11px] font-mono rounded">11:30 - 13:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🍲 Heavy Lunch</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">มื้อเที่ยงชาบูหม้อส่วนตัว / ซูชิหน้าล้น</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 🍲 <strong>Shabuwara (สาขา Namba Grand Kagetsu):</strong> <span class="text-amber-400 font-semibold">(🟡 ควรจอง)</span> ชาบูหม้อส่วนตัวเนื้อวัวพรีเมียม (ห่างจากตลาดปลา ~400m)<br>
+                                    • 🍣 <strong>Harukoma Sushi:</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง 30-45 นาที)</span> ซูชิหน้าล้นย่าน Tenjinbashi (<span class="text-rose-400">ปิดวันอังคาร</span>)
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Shabuwara Namba', 'Namba Grand Kagetsu', 'ชาบูหม้อส่วนตัวเนื้อพรีเมียม', 'Shabuwara Namba')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> Shabuwara
+                        </button>
+                    </div>
+
+                    <!-- Cafes & Umeda -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="food">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d7-3">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">14:00 - 20:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">☕ Cafe Tour & Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">ทัวร์คาเฟ่ Kitahama + ขนมหวาน Umeda & ช้อปปิ้ง</h4>
+                                <div class="text-xs text-gray-400 mt-2 space-y-1">
+                                    • ☕ <strong>Ourlog Coffee (Kitahama):</strong> <span class="text-amber-400 font-semibold">(🟡 คิวปานกลาง)</span> คาเฟ่ริมน้ำสุดฮิป (11:00 - 19:00 น.)<br>
+                                    • ☕ <strong>Neel Coffee:</strong> <span class="text-emerald-400 font-semibold">(🟢 คิวเร็ว)</span> คาเฟ่วินเทจ (10:00 - 19:00 น.)<br>
+                                    • 🥧 <strong>grenier (สาขา Umeda):</strong> <span class="text-rose-400 font-semibold">(🔴 คิวยาว 30-60 นาที)</span> พายกรอบสอดไส้ครีมสดสตรอว์เบอร์รี ชั้น 1 Hankyu Grand Building<br>
+                                    • 🛍️ 17:30 - 20:00 น. ช้อปปิ้งห้าง <strong>Shinsaibashi PARCO</strong> และเก็บตกของฝาก
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1.5 self-start md:self-center">
+                            <button onclick="openModal('Ourlog Coffee Kitahama', 'Kitahama, Osaka', 'นั่งรถใต้ดินจาก Namba ไป Kitahama ~15 นาที', 'Ourlog Coffee Kitahama')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Ourlog Coffee
+                            </button>
+                            <button onclick="openModal('grenier Umeda', 'Hankyu Grand Building 1F', 'พายกรอบครีมสดสตรอว์เบอร์รี', 'grenier Umeda')" 
+                                class="text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 text-left">
+                                <i class="fa-solid fa-location-dot mr-1"></i> grenier Umeda
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DAY 8 ================= -->
+            <div class="day-section space-y-4 pt-6 border-t border-gray-800/80" data-day-id="8">
+                <div class="flex items-center gap-3 border-l-4 border-jp-red pl-4 py-1">
+                    <div>
+                        <div class="text-xs font-bold text-jp-red tracking-wider uppercase">DAY 8 • 18 OCTOBER 2026</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white font-display">Osaka ➔ Rinku Town Outlet ➔ KIX ➔ BKK</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <!-- Outlet Shopping -->
+                    <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d8-1">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-sky-950 text-sky-400 text-[11px] font-mono rounded">10:00 - 16:00 น.</span>
+                                    <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-[11px] rounded">🛍️ Outlet Shopping</span>
+                                </div>
+                                <h4 class="text-base font-semibold text-white mt-1">Check-out ➔ Rinku Premium Outlets</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    • 10:00 น. Check-out ออกจากโรงแรม ไปสถานี Namba ขึ้นรถไฟ Nankai Main Line มุ่งหน้าสถานี Rinku-town (~40 นาที)<br>
+                                    • 11:30 - 16:00 น. ฝากกระเป๋าที่ล็อกเกอร์สถานี แล้วช้อปปิ้งทิ้งทายที่ Rinku Premium Outlets
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Rinku Premium Outlets', 'Rinku Town', 'ก่อนถึงสนามบิน KIX เพียง 1 สถานี', 'Rinku Premium Outlets')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> Rinku Outlet
+                        </button>
+                    </div>
+
+                    <!-- Airport & Departure -->
+                    <div class="timeline-item glass-card p-4 rounded-xl border-l-4 border-rose-500 flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="transit">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="visit-check mt-1 w-4 h-4 rounded text-jp-red focus:ring-0 bg-gray-800 border-gray-600" id="check-d8-2">
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 bg-rose-950 text-rose-300 text-[11px] font-mono font-bold rounded">16:00 - 19:30 น.</span>
+                                    <span class="px-2 py-0.5 bg-jp-red text-white text-[11px] font-bold rounded">✈️ Flight MM091 Home</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white mt-1">เดินทางสู่ KIX T2 & เช็คอินบินกลับกรุงเทพฯ</h4>
+                                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                                    • 16:00 - 16:15 น. นั่งรถไฟจาก Rinku-town ไป KIX (~6 นาที)<br>
+                                    • 16:30 น. ถึง T1 นั่ง Shuttle Bus ข้ามไป <strong>Terminal 2</strong><br>
+                                    • <strong class="text-amber-400">17:00 น. เช็คอินโหลดกระเป๋า (ปิดก่อนเครื่องออก 50 นาที)</strong><br>
+                                    • 19:30 น. เทคออฟกลับ BKK (ถึงสุวรรณภูมิ 23:55 น.)
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('Kansai International Airport Terminal 2', 'KIX T2', 'เคาน์เตอร์ Peach Aviation', 'Kansai International Airport Terminal 2')" 
+                            class="self-start md:self-center text-xs bg-gray-800 hover:bg-gray-700 text-jp-gold px-3 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap">
+                            <i class="fa-solid fa-location-dot mr-1"></i> KIX Terminal 2
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ESSENTIAL TIPS & ADVANCE BOOKING CARDS -->
+        <section class="mt-12 glass-panel p-6 rounded-2xl border border-amber-500/20">
+            <h3 class="text-xl font-bold text-white font-display mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-lightbulb text-amber-400"></i>
+                <span>สรุปเทคนิค & ร้านที่ต้องจองล่วงหน้า</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Advance Booking Needed -->
+                <div class="bg-gray-900/80 p-4 rounded-xl border border-gray-800">
+                    <h4 class="text-sm font-bold text-amber-400 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>ร้านที่ควรจองล่วงหน้า (1-2 เดือนก่อนบิน)</span>
+                    </h4>
+                    <ul class="text-xs text-gray-300 space-y-1.5 list-disc list-inside">
+                        <li><strong class="text-white">enen Kyoto</strong> (ปิ้งย่างเนื้อวัวดิสเพลย์สวยย่าน Kawaramachi)</li>
+                        <li><strong class="text-white">Yakiniku Kameda</strong> (ปิ้งย่างเนื้อวัว เปิดถึงตี 4)</li>
+                        <li><strong class="text-white">Eel Nakasho Shinsaibashi</strong> (ข้าวหน้าปลาไหลย่างเตาถ่าน)</li>
+                        <li><strong class="text-white">Shabuwara</strong> (ชาบูหม้อส่วนตัวเนื้อวัวพรีเมียม)</li>
+                    </ul>
+                </div>
+
+                <!-- Queue Management Tips -->
+                <div class="bg-gray-900/80 p-4 rounded-xl border border-gray-800">
+                    <h4 class="text-sm font-bold text-rose-400 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-user-clock"></i>
+                        <span>การรับมือร้านคิวยาวมาก (🔴)</span>
+                    </h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        ร้านสัญลักษณ์ 🔴 (<strong class="text-white">Ajikura Tengoku, Gyukatsu Motomura, Unagi Kushiyaki Izumo, grenier</strong>) 
+                        คิวมักจะเกิน 45-90 นาที<br><br>
+                        💡 <em>คำแนะนำ:</em> ไปก่อนเวลาร้านเปิด 30 นาที (เช่น ไปกดคิว Ajikura ตอน 16:30 น.) หรือย้ายไปกินช่วง Off-peak (14:00 - 16:00 น.) จะประหยัดเวลาได้เยอะมาก
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LOCATION MODAL (NO EXTERNAL LINK REDIRECT) -->
+    <div id="location-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel max-w-lg w-full rounded-2xl border border-gray-700 p-6 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-jp-gold/20 text-jp-gold flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-map-pin"></i>
+                </div>
+                <div>
+                    <h3 id="modal-title" class="text-lg font-bold text-white font-display">ชื่อสถานที่</h3>
+                    <p id="modal-subtitle" class="text-xs text-gray-400">ย่าน/ตำแหน่ง</p>
+                </div>
+            </div>
+
+            <div class="space-y-3 text-xs text-gray-300 border-t border-b border-gray-800 py-4 my-2">
+                <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+                    <span class="text-gray-400 block mb-1">📍 คำแนะนำการเดินทาง & ระยะทาง:</span>
+                    <p id="modal-note" class="text-white font-medium">-</p>
+                </div>
+                <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+                    <span class="text-gray-400 block mb-1">🔍 ค้นหาใน Google Maps App:</span>
+                    <code id="modal-search-term" class="text-amber-300 font-mono select-all font-bold block bg-black/40 p-1.5 rounded"></code>
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-2">
+                <button onclick="closeModal()" class="px-5 py-2 bg-jp-red text-white text-xs font-semibold rounded-xl hover:bg-jp-crimson transition-colors">
+                    ปิดหน้าต่าง
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-500 mt-12">
+        <p>🎌 Japan Trip Itinerary (11 - 18 October 2026) • Designed for comfortable single-page browsing</p>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        const TRIP_START_DATE = new Date('2026-10-11T01:30:00+07:00');
+
+        // Countdown Timer Logic
+        function updateCountdown() {
+            const now = new Date();
+            const diff = TRIP_START_DATE - now;
+
+            if (diff <= 0) {
+                document.getElementById('countdown').innerText = 'กำลังเดินทางอยู่ 🚀';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById('countdown').innerText = `${days}วัน ${hours}ชม. ${mins}นาที`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Checklist Persistence & Counter
+        const checkboxes = document.querySelectorAll('.visit-check');
+        const totalCountEl = document.getElementById('total-count');
+        const checkedCountEl = document.getElementById('checked-count');
+
+        totalCountEl.innerText = checkboxes.length;
+
+        function updateCheckCount() {
+            const checked = document.querySelectorAll('.visit-check:checked').length;
+            checkedCountEl.innerText = checked;
+        }
+
+        checkboxes.forEach(cb => {
+            // Load state
+            const savedState = localStorage.getItem(cb.id);
+            if (savedState === 'true') {
+                cb.checked = true;
+            }
+
+            // Save state change
+            cb.addEventListener('change', () => {
+                localStorage.setItem(cb.id, cb.checked);
+                updateCheckCount();
+            });
+        });
+        updateCheckCount();
+
+        // Day Tabs Filtering
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const daySections = document.querySelectorAll('.day-section');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active', 'bg-jp-red', 'text-white'));
+                tabBtns.forEach(b => b.classList.add('bg-gray-900', 'text-gray-300'));
+                
+                btn.classList.add('active');
+                btn.classList.remove('bg-gray-900', 'text-gray-300');
+
+                const targetDay = btn.getAttribute('data-day');
+
+                daySections.forEach(section => {
+                    if (targetDay === 'all' || section.getAttribute('data-day-id') === targetDay) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Activity Category Filtering
+        const catFilters = document.querySelectorAll('.category-filter');
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        catFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                catFilters.forEach(f => f.classList.remove('active'));
+                btn.classList.add('active');
+
+                const cat = btn.getAttribute('data-cat');
+
+                timelineItems.forEach(item => {
+                    if (cat === 'all' || item.getAttribute('data-cat') === cat) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Instant Search Engine
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+
+            timelineItems.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Ensure sections with matching items stay visible
+            if (query !== '') {
+                daySections.forEach(sec => sec.style.display = 'block');
+            }
+        });
+
+        // Location Modal Dialog Handlers
+        function openModal(title, subtitle, note, searchTerm) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-subtitle').innerText = subtitle;
+            document.getElementById('modal-note').innerText = note;
+            document.getElementById('modal-search-term').innerText = searchTerm;
+            
+            document.getElementById('location-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('location-modal').classList.add('hidden');
+        }
+
+        // Close modal on click outside box
+        document.getElementById('location-modal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('location-modal')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
