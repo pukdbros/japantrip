@@ -162,17 +162,6 @@
                 </div>
             </div>
 
-            <!-- Quick Action Counters -->
-            <div class="flex items-center gap-2 text-xs md:text-sm">
-                <div class="bg-gray-800/80 px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
-                    <i class="fa-solid fa-[#FFD700] fa-clock text-amber-400"></i>
-                    <span>นับถอยหลัง: <strong id="countdown" class="text-amber-400 font-mono">---</strong></span>
-                </div>
-                <div class="bg-gray-800/80 px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2">
-                    <i class="fa-solid fa-check-circle text-emerald-400"></i>
-                    <span>เก็บแล้ว: <strong id="checked-count" class="text-emerald-400 font-mono">0</strong>/<span id="total-count">0</span></span>
-                </div>
-            </div>
         </div>
     </header>
 
@@ -1349,8 +1338,6 @@
 
     <!-- INTERACTIVE JAVASCRIPT LOGIC -->
     <script>
-        const TRIP_START_DATE = new Date('2026-10-11T01:30:00+07:00');
-
         // Daily forecasts from Open-Meteo, grouped by destination.
         const weatherLocations = {
             Kyoto: { latitude: 35.0116, longitude: 135.7681 },
@@ -1673,36 +1660,8 @@
         loadUsjLiveStatus();
         setInterval(loadUsjLiveStatus, 5 * 60 * 1000);
 
-        // Countdown Timer Logic
-        function updateCountdown() {
-            const now = new Date();
-            const diff = TRIP_START_DATE - now;
-
-            if (diff <= 0) {
-                document.getElementById('countdown').innerText = 'กำลังเดินทางอยู่ 🚀';
-                return;
-            }
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-            document.getElementById('countdown').innerText = `${days}วัน ${hours}ชม. ${mins}นาที`;
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // Checklist Persistence & Counter
+        // Checklist Persistence
         const checkboxes = document.querySelectorAll('.visit-check');
-        const totalCountEl = document.getElementById('total-count');
-        const checkedCountEl = document.getElementById('checked-count');
-
-        totalCountEl.innerText = checkboxes.length;
-
-        function updateCheckCount() {
-            const checked = document.querySelectorAll('.visit-check:checked').length;
-            checkedCountEl.innerText = checked;
-        }
 
         checkboxes.forEach(cb => {
             // Load state
@@ -1714,10 +1673,8 @@
             // Save state change
             cb.addEventListener('change', () => {
                 localStorage.setItem(cb.id, cb.checked);
-                updateCheckCount();
             });
         });
-        updateCheckCount();
 
         // Day Tabs Filtering
         const tabBtns = document.querySelectorAll('.tab-btn');
