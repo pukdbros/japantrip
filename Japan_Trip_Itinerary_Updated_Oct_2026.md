@@ -41,7 +41,7 @@
   - **19:30 น.** ตบท้ายของหวาน:
     - 🍵 **Matcha House Kyoto Kawaramachi** *(🟢 คิวหมุนเวียนเร็ว)* — Matcha Tiramisu ในกล่องไม้
 - **🗺️ พิกัด Google Maps สำหรับ Day 1:**
-  1. [Smile Hotel Kyoto Shijo](https://maps.google.com/?q=Smile+Hotel+Kyoto+Shijo)
+  1. [Smile Hotel Kyoto Karasumagojo](https://maps.google.com/?q=Smile+Hotel+Kyoto+Karasumagojo)
   2. [LOFTMAN COOP KYOTO](https://maps.google.com/?q=LOFTMAN+COOP+KYOTO) *(ร้านขาย norda)*
   3. [Amam Dacotan Kyoto](https://maps.google.com/?q=Amam+Dacotan+Kyoto)
   4. [I'm donut? Kyoto](https://maps.google.com/?q=I'm+donut?+Kyoto)

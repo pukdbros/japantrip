@@ -972,6 +972,13 @@
                     </div>
                 </div>
 
+                <section id="usj-live-status" class="glass-panel rounded-xl p-4" aria-live="polite" aria-label="สถานะคิวเครื่องเล่น USJ">
+                    <div class="flex items-center gap-2 text-sm text-gray-300">
+                        <i class="fa-solid fa-spinner fa-spin text-purple-300" aria-hidden="true"></i>
+                        <span>กำลังโหลดสถานะคิวเครื่องเล่น USJ...</span>
+                    </div>
+                </section>
+
                 <div class="grid grid-cols-1 gap-3">
                     <!-- USJ Full Day -->
                     <div class="timeline-item glass-card p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3" data-cat="sightseeing">
@@ -1433,6 +1440,184 @@
         }
 
         loadTripWeather();
+
+        const USJ_LIVE_API = 'https://api.themeparks.wiki/v1/entity/47f61fac-7586-41ac-ae80-61c9257cf33e/live';
+        const usjLiveStatus = document.getElementById('usj-live-status');
+
+        function createUsjTextElement(tagName, className, text) {
+            const element = document.createElement(tagName);
+            element.className = className;
+            element.textContent = text;
+            return element;
+        }
+
+        function renderUsjLiveStatus(liveData) {
+            const operatingAttractions = liveData.filter(item =>
+                item.entityType === 'ATTRACTION' && item.status === 'OPERATING'
+            );
+            const operatingRides = liveData.filter(item =>
+                item.entityType === 'ATTRACTION' &&
+                item.status === 'OPERATING' &&
+                Number.isFinite(item.queue?.STANDBY?.waitTime) &&
+                item.queue.STANDBY.waitTime >= 0
+            );
+
+            usjLiveStatus.replaceChildren();
+
+            if (operatingAttractions.length === 0) {
+                usjLiveStatus.append(createUsjTextElement(
+                    'p',
+                    'text-sm text-gray-300',
+                    'ขณะนี้ API ไม่ระบุว่ามีเครื่องเล่นที่เปิดให้บริการ'
+                ));
+                return;
+            }
+
+            const averageWait = operatingRides.length
+                ? Math.round(
+                    operatingRides.reduce((total, ride) => total + ride.queue.STANDBY.waitTime, 0) / operatingRides.length
+                )
+                : null;
+            const crowdLevel = averageWait === null
+                ? null
+                : averageWait < 20
+                    ? { label: 'คนน้อย', color: 'text-emerald-400', icon: 'fa-face-smile' }
+                    : averageWait < 40
+                        ? { label: 'ปานกลาง', color: 'text-amber-400', icon: 'fa-face-meh' }
+                        : averageWait < 60
+                            ? { label: 'ค่อนข้างหนาแน่น', color: 'text-orange-400', icon: 'fa-people-group' }
+                            : { label: 'หนาแน่นมาก', color: 'text-rose-400', icon: 'fa-people-group' };
+
+            const header = document.createElement('div');
+            header.className = 'flex flex-col md:flex-row md:items-start md:justify-between gap-3';
+
+            const summary = document.createElement('div');
+            summary.className = 'flex items-start gap-3';
+            if (crowdLevel) {
+                const icon = document.createElement('span');
+                icon.className = `grid w-10 h-10 shrink-0 place-items-center rounded-lg bg-gray-900/80 ${crowdLevel.color}`;
+                icon.setAttribute('aria-hidden', 'true');
+                const iconElement = document.createElement('i');
+                iconElement.className = `fa-solid ${crowdLevel.icon}`;
+                icon.append(iconElement);
+                summary.append(icon);
+            }
+
+            const summaryText = document.createElement('div');
+            summaryText.append(
+                createUsjTextElement('h4', crowdLevel ? `font-semibold ${crowdLevel.color}` : 'font-semibold text-gray-200',
+                    crowdLevel ? `ระดับความหนาแน่นโดยประมาณ: ${crowdLevel.label}` : 'ไม่มีข้อมูลคิวเพียงพอสำหรับประเมินความหนาแน่น'),
+                createUsjTextElement('p', 'mt-1 text-xs text-gray-300', averageWait === null
+                    ? `API ระบุว่าเปิด ${operatingAttractions.length} เครื่องเล่น แต่ยังไม่มีรายการที่มีเวลาคิว`
+                    : `เวลารอเฉลี่ย ${averageWait} นาที จาก ${operatingRides.length} เครื่องเล่นที่มีข้อมูลคิว (API ระบุว่าเปิด ${operatingAttractions.length} รายการ)`)
+            );
+            summary.append(summaryText);
+
+            const updatedAt = operatingRides
+                .map(ride => Date.parse(ride.lastUpdated))
+                .filter(Number.isFinite)
+                .reduce((latest, timestamp) => Math.max(latest, timestamp), 0);
+            const updateText = updatedAt
+                ? `ข้อมูลล่าสุด ${new Intl.DateTimeFormat('th-TH', {
+                    hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo'
+                }).format(new Date(updatedAt))} JST`
+                : 'ไม่พบเวลาอัปเดตข้อมูล';
+            header.append(summary, createUsjTextElement('span', 'text-[11px] text-gray-400', updateText));
+            usjLiveStatus.append(header);
+
+            const rideDetails = document.createElement('details');
+            rideDetails.className = 'group mt-4';
+            const rideSummary = document.createElement('summary');
+            rideSummary.className = 'flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg bg-gray-900/60 px-3 py-2 text-xs text-purple-200 hover:bg-gray-900';
+            rideSummary.append(
+                createUsjTextElement('span', '', `ดูเครื่องเล่นที่เปิดทั้งหมด ${operatingAttractions.length} รายการ`),
+                createUsjTextElement('i', 'fa-solid fa-chevron-down transition-transform group-open:rotate-180', '')
+            );
+            const rideList = document.createElement('div');
+            rideList.className = 'mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2';
+            operatingAttractions
+                .sort((a, b) => (b.queue?.STANDBY?.waitTime ?? -1) - (a.queue?.STANDBY?.waitTime ?? -1))
+                .forEach(ride => {
+                    const row = document.createElement('div');
+                    row.className = 'flex items-center justify-between gap-3 rounded-lg bg-gray-900/60 px-3 py-2 text-xs';
+                    const rideInfo = document.createElement('div');
+                    rideInfo.className = 'min-w-0';
+                    const hasWaitTime = Number.isFinite(ride.queue?.STANDBY?.waitTime) &&
+                        ride.queue.STANDBY.waitTime >= 0;
+                    rideInfo.append(
+                        createUsjTextElement('p', 'text-gray-200', ride.name),
+                        createUsjTextElement('p', 'mt-1 text-[10px] text-gray-500', ride.lastUpdated
+                            ? `อัปเดต ${new Intl.DateTimeFormat('th-TH', {
+                                hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo'
+                            }).format(new Date(ride.lastUpdated))} JST`
+                            : 'ไม่พบเวลาอัปเดต')
+                    );
+                    row.append(
+                        rideInfo,
+                        createUsjTextElement(
+                            'strong',
+                            hasWaitTime ? 'shrink-0 text-purple-300' : 'shrink-0 text-amber-300',
+                            hasWaitTime ? `${ride.queue.STANDBY.waitTime} นาที` : 'ไม่มีเวลาคิว'
+                        )
+                    );
+                    rideList.append(row);
+                });
+            rideDetails.append(rideSummary, rideList);
+            usjLiveStatus.append(rideDetails);
+            usjLiveStatus.append(createUsjTextElement(
+                'p',
+                'mt-2 text-[11px] text-gray-400',
+                `รายการนี้รวมเครื่องเล่นที่ API ระบุว่าเปิด ${operatingAttractions.length} รายการ; รายการที่ไม่มีเวลาคิวจะระบุไว้แยกต่างหาก และไม่นำมาคำนวณค่าเฉลี่ย`
+            ));
+
+            const note = document.createElement('p');
+            note.className = 'mt-3 text-[11px] leading-relaxed text-gray-400';
+            const japanToday = new Intl.DateTimeFormat('en-CA', {
+                timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit'
+            }).format(new Date());
+            const tripDate = '2026-10-16';
+            const dateNote = japanToday === tripDate
+                ? 'สถานะวันนี้ (JST)'
+                : 'ข้อมูลวันนี้ใช้ทำนายวันที่ 16 ต.ค. ไม่ได้ — เช็กใหม่เช้าวันไป USJ';
+            note.append(
+                document.createTextNode(`${dateNote} • เวลารอส่งต่อจากระบบของสวนสนุกผ่าน ThemeParks.wiki แต่อาจล่าช้าหรือคลาดเคลื่อนได้ • รีเฟรชทุก 5 นาที • `)
+            );
+            const reliabilityLink = document.createElement('a');
+            reliabilityLink.href = 'https://www.themeparks.wiki/reliability';
+            reliabilityLink.target = '_blank';
+            reliabilityLink.rel = 'noopener noreferrer';
+            reliabilityLink.className = 'text-purple-300 underline hover:text-purple-200';
+            reliabilityLink.textContent = 'ที่มาและความสดใหม่ของข้อมูล';
+            note.append(reliabilityLink, document.createTextNode(' • '));
+            const attributionLink = document.createElement('a');
+            attributionLink.href = 'https://themeparks.wiki/';
+            attributionLink.target = '_blank';
+            attributionLink.rel = 'noopener noreferrer';
+            attributionLink.className = 'text-purple-300 underline hover:text-purple-200';
+            attributionLink.textContent = 'Powered by ThemeParks.wiki';
+            note.append(attributionLink);
+            usjLiveStatus.append(note);
+        }
+
+        async function loadUsjLiveStatus() {
+            try {
+                const response = await fetch(USJ_LIVE_API, { cache: 'no-cache' });
+                if (!response.ok) throw new Error(`USJ live API returned ${response.status}`);
+                const data = await response.json();
+                if (!Array.isArray(data.liveData)) throw new Error('USJ live API returned an invalid response');
+                renderUsjLiveStatus(data.liveData);
+            } catch (error) {
+                console.error('Unable to load USJ live status:', error);
+                usjLiveStatus.replaceChildren(createUsjTextElement(
+                    'p',
+                    'text-sm text-rose-300',
+                    'โหลดสถานะคิว USJ ไม่สำเร็จ กรุณาลองใหม่ภายหลัง'
+                ));
+            }
+        }
+
+        loadUsjLiveStatus();
+        setInterval(loadUsjLiveStatus, 5 * 60 * 1000);
 
         // Countdown Timer Logic
         function updateCountdown() {
