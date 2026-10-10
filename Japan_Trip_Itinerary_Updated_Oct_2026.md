@@ -138,6 +138,7 @@
     - 👟 **downbeat RUNNING OSAKA** — ร้านขายรองเท้าวิ่งเทรลเฉพาะทาง มีแบรนด์ **norda** (ตั้งอยู่ริมถนน Dotonbori)
     - 🌌 Disney Store (สาขา Shinsaibashi): สาขาใหญ่ใจกลางย่านช้อปปิ้งชินไซบาชิ มีสินค้าคาแรคเตอร์ครบครัน รวมถึงคอลเลกชัน Star Wars และแฟชั่นทั่วไป
     - 👟 **ช้อปปิ้งห้าง Shinsaibashi PARCO** - Mont-bell (สาขา Namba CITY / Daimaru Shinsaibashi / LUCUA Osaka)
+    - 🛍️ **Gu Shinsaibashi Store** - สาขาใหญ่ที่สุดใน osaka
     - 🍱 **Unagi Kushiyaki Izumo** *(🔴 คิว 60–90 นาที)* — ข้าวหน้าปลาไหลโปะไข่ทรงเครื่องยักษ์
     - 🍢 **Hozenji Yamakazu** *(🟡 คิวปานกลาง)* — อาหารญี่ปุ่นสไตล์คัปโปะ/โอเด้ง ในซอยโบราณ
     - 🍣 **Golai Tachizushi** *(🟢 คิวเร็ว)* — ร้านยืนกินซูชิสดๆ
@@ -146,6 +147,7 @@
   2. [Namba Yasaka Shrine](https://maps.google.com/?q=Namba+Yasaka+Shrine)
   3. [downbeat RUNNING OSAKA](https://maps.google.com/?q=downbeat+RUNNING+OSAKA) *(ร้านขาย norda)*
   4. [Dotonbori Glico Sign](https://maps.google.com/?q=Dotonbori+Glico+Sign)
+  5. [Gu Shinsaibashi Store](https://maps.google.com/?q=Gu+Shinsaibashi+Store)
 
 ---
 
