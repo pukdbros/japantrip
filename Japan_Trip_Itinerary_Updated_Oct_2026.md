@@ -70,6 +70,12 @@
     - 🍣 **Sushi Bar Sashisu** / **Tai Sushi** *(🟢 คิวเร็ว 15–30 นาที)*
   - **20:30 น.** ซื้อขนมกลับโรงแรม:
     - 🍩 **koe donuts kyoto** *(🟢 คิวเร็ว)* — โดนัทโฮมเมดสไตล์คราฟต์
+- ชอปปิ้ง
+  - สินค้าสาย Star Wars / ของสะสมในเกียวโต:
+    - 🌌 Disney Store (สาขา Shijo-Kawaramachi): แวะเลือกซื้อโซนของสะสม Star Wars และ Marvel ที่ขึ้นชื่อว่ามีของค่อนข้างครบครัน   
+    - 📚 Mandarake Kyoto: สาขาใหม่ในย่านท่องเที่ยว เหมาะแวะส่องงานวินเทจหรือหนังสืออาร์ตบุ๊ก Star Wars   
+    - ⚡ Yodobashi Camera หรือ Bic Camera (หน้าสถานีเกียวโต): เดินต่อเพื่อหาโมเดลพลาโม (Bandai Plamo) หรือของเล่นออกใหม่มือหนึ่งในราคาป้าย (ทำ Tax-Free ได้) มีโซนล็อกของเล่นและโมเดล Star Wars ขนาดใหญ่   
+    - 🛸 ตึกสถานีเกียวโต (Kyoto Station): เดินเช็กบริเวณพื้นที่จัดงาน (เช่น ชั้น 2 Ekimal A La Mode หรือห้างที่เชื่อมกับสถานี) เผื่อตรงกับช่วงเวียนจัด Star Wars Pop-Up Store ที่เน้นขายสินค้าลิขสิทธิ์จำกัดเวลาและพวงกุญแจไลท์เซเบอร์ 
 - **🗺️ พิกัด Google Maps สำหรับ Day 2:**
   1. [Arashiyama Bamboo Grove](https://maps.google.com/?q=Arashiyama+Bamboo+Grove)
   2. [% Arabica Kyoto Arashiyama](https://maps.google.com/?q=Arabica+Kyoto+Arashiyama)
@@ -130,6 +136,8 @@
   - **15:45 - 16:30 น.** เดินเล่นย่าน **Orange Street (Tachibana-dori)** ร้านไลฟ์สไตล์และแฟชั่น
   - **16:30 - 20:30 น.** ถ่ายรูปป้ายกูลิโกะย่าน Dotonbori ช้อปปิ้งและเลือกทานอาหารเย็น:
     - 👟 **downbeat RUNNING OSAKA** — ร้านขายรองเท้าวิ่งเทรลเฉพาะทาง มีแบรนด์ **norda** (ตั้งอยู่ริมถนน Dotonbori)
+    - 🌌 Disney Store (สาขา Shinsaibashi): สาขาใหญ่ใจกลางย่านช้อปปิ้งชินไซบาชิ มีสินค้าคาแรคเตอร์ครบครัน รวมถึงคอลเลกชัน Star Wars และแฟชั่นทั่วไป
+    - 👟 **ช้อปปิ้งห้าง Shinsaibashi PARCO** - Mont-bell (สาขา Namba CITY / Daimaru Shinsaibashi / LUCUA Osaka)
     - 🍱 **Unagi Kushiyaki Izumo** *(🔴 คิว 60–90 นาที)* — ข้าวหน้าปลาไหลโปะไข่ทรงเครื่องยักษ์
     - 🍢 **Hozenji Yamakazu** *(🟡 คิวปานกลาง)* — อาหารญี่ปุ่นสไตล์คัปโปะ/โอเด้ง ในซอยโบราณ
     - 🍣 **Golai Tachizushi** *(🟢 คิวเร็ว)* — ร้านยืนกินซูชิสดๆ
@@ -164,12 +172,15 @@
   - **11:30 - 13:00 น.** มื้อเที่ยง:
     - 🍲 **Shabuwara Namba** *(🟡 ควรจองล่วงหน้า)* — ชาบูหม้อส่วนตัวเนื้อวัวพรีเมียม
     - 🍣 **Harukoma Sushi** *(🟡 คิว 30–45 นาที)* — ซูชิหน้าล้น
-  - **14:00 - 17:00 น.** เดินเที่ยวคาเฟ่ย่าน **Nakazakicho** & ย่าน **Umeda**:
+  - **14:00 - 21:00 น.** เดินเที่ยวคาเฟ่ย่าน **Nakazakicho** & ย่าน **Umeda**:
     - ☕ **neel 中崎町 (neel Nakazakicho)** *(🟡 คิว 20–40 นาที / ไม่ต้องจอง)* — คาเฟ่ลายลูกแพร์สุดชิค กาแฟดี & แซนด์วิชหมูทอด Katsusando
     - ☕ **Ourlog Coffee (สาขา Kitahama)** *(🟡 คิวปานกลาง)* — คาเฟ่ริมน้ำ
     - 🥧 **grenier (สาขา Umeda Hankyu Grand Building)** *(🔴 คิว 30–60 นาที)* — พายกรอบสอดไส้ครีมสตรอว์เบอร์รี
     - 👟 **LOFTMAN COOP UMEDA** — ร้านขายรองเท้า **norda** (ตัวเลือกฝั่ง Umeda)
-  - **17:30 - 20:00 น.** ช้อปปิ้งห้าง Shinsaibashi PARCO & Mont-bell (สาขา Namba CITY / Daimaru Shinsaibashi / LUCUA Osaka)
+    - 🌌 Disney Store (สาขา LUCUA Osaka ย่าน Umeda): ตั้งอยู่เชื่อมกับสถานี Osaka/Umeda เดินทางสะดวก   
+    - 🧸 Kiddy Land (สาขา Umeda ในตึก Hankyu Sanbangai): ไฮไลต์สวรรค์ของแฟน Star Wars ฝั่งโอซาก้า มีโซน "Star Wars Galaxy" ที่รวบรวมสินค้า ฟิกเกอร์ และของสะสมลิขสิทธิ์แท้ไว้เยอะที่สุด
+    - 🤖 Yodobashi Camera หรือ Bic Camera (สาขา Umeda): เดินเลือกซื้อโมเดลพลาโม (Bandai Plamo) และของเล่น Star Wars ขนาดใหญ่ในราคาป้าย (ทำ Tax-Free ได้)
+  - นั่งรถไฟไป ช้อปปิ้งห้าง Shinsaibashi PARCO & Mont-bell (สาขา Namba CITY / Daimaru Shinsaibashi / LUCUA Osaka) ได้
 - **🗺️ พิกัด Google Maps สำหรับ Day 7:**
   1. [Kuromon Ichiba Market](https://maps.google.com/?q=Kuromon+Market)
   2. [Shabuwara Namba](https://maps.google.com/?q=Shabuwara+Namba)
